@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form name="search-form" action="process.php" method="get">
+
+    <fieldset>
+
+        <legend>基本信息</legend>
+
+        <input type="text" name="search" id="" placeholder="输入信息" value="">
+
+        <p>Checkboxes:</p>
+        <input type="checkbox" name="select-1" value="1"> 1st
+        <input type="checkbox" name="select-2" value="2"> 2st
+        <input type="checkbox" name="select-3" value="3"> 3st
+
+        <p>Select:</p>
+        <select name="address">
+            <option value="上海">上海</option>
+            <option value="北京">北京</option>
+            <option value="辽宁" selected>辽宁</option>
+        </select>
+
+        <input type="datetime-local" name="" id="">
+
+        <input type="color" name="" id="">
+
+        <input type="range" name="" id="" min="1" max="100">
+    </fieldset>
+
+    <fieldset>
+        <legend>
+            meter 元素
+        </legend>
+
+        <label for="fuel">Fuel level:</label>
+        <meter value="0.2" id="fuel">at 20%</meter>
+
+    </fieldset>
+
+    <input type="number" name="number" id="" min="1" max="10000">
+
+    <input type="submit" value="Search">
+</form>
+
+</body>
+</html>
