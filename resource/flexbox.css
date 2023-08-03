@@ -1,0 +1,10 @@
+main {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+main p {
+    flex-basis: 30%;
+}

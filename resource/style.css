@@ -1,3 +1,13 @@
+
+body {
+    font-family: Futura, Helvetica, Arial, sans-serif;
+    /*background: rgba(255, 0, 0, 0.5);*/
+    /*background: linear-gradient(to right, rgba(0, 0, 0, 0.25) 68%, rgb(0, 0, 0) 69%);*/
+    /*background: radial-gradient(red, orange);*/
+    background: url("/images/fish.jpg") no-repeat center;
+    background-size: 100% 100%;
+}
+
 /*p {*/
 /*    font-size: 20px;*/
 /*    color: red;*/
@@ -7,10 +17,137 @@
 /*    color: green;*/
 /*}*/
 
-p.standout {
-    color: red
+.standout {
+    color: green;
 }
 
-p.intro {
+.intro {
     font-size: 24px
+}
+
+.alert {
+    background: red;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.blue-background {
+    background: blue;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/**
+特定元素的后代元素
+ */
+/*footer p a {*/
+/*    background: lightgrey;*/
+/*    color: darkblue;*/
+/*}*/
+
+footer a {
+    color: red;
+}
+
+footer > a {
+    color: green;
+}
+
+/*p ~ a {*/
+/*    color: yellowgreen;*/
+/*}*/
+
+img[alt] {
+    border-style: solid;
+    border-width: 5px;
+    border-color: yellowgreen;
+}
+
+/*a, a:link {*/
+/*    color: green;*/
+/*    font-weight: lighter;*/
+/*}*/
+
+/*a:visited {*/
+/*    color: gray;*/
+/*}*/
+
+/*a:focus, a:hover, a:active {*/
+/*    color: red;*/
+/*}*/
+
+ul li:nth-child(even) {
+    background: lightgrey;
+}
+
+ul li:nth-child(odd) {
+    background: lightblue;
+}
+
+/*h1 {*/
+/*    font-size: 3em;*/
+/*    font-style: oblique;*/
+/*    text-decoration: line-through dotted red;*/
+/*}*/
+
+.byline {
+    /*vertical-align: center;*/
+    /*writing-mode : tb-rl ;*/
+    line-height: 1.5em;
+    letter-spacing: 0.1em;
+    word-spacing: 0.2em;
+}
+
+a.button {
+    display: block
+}
+
+/*aside{*/
+/*    width: 400px;*/
+/*    height: 200px;*/
+/*    border-style: solid;*/
+/*    float: right;*/
+/*}*/
+
+/*.season{*/
+/*    padding: 20px;*/
+/*    margin: 20px;*/
+/*}*/
+
+.wrapper{
+    width: 800px;
+    margin: 30px auto;
+}
+
+main{
+    width: 500px;
+}
+
+aside{
+    width: 260px;
+    padding: 15px;
+    float: right;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.085);
+    border: 1px solid #333333;
+}
+
+p:nth-of-type(1){
+    line-height: 1.5em;
+    letter-spacing: 0.1em;
+    word-spacing: 0.2em;
+}
+
+.overlay{
+    position: absolute;
+    top: 10%;
+    z-index: 1000;
+    background: #cfcfcf;
+    text-align: center;
+    padding: 40px;
 }

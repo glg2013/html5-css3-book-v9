@@ -1,0 +1,91 @@
+a.button {
+    background: #880000;
+    border-radius: 40px;
+    color: #ffffff;
+    display: block;
+    font-size: 1.5rem;
+    max-width: 150px;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.4s ease-in;
+}
+
+a.button:hover {
+    background: #008800;
+}
+
+img {
+    padding: 20px;
+    width: 250px;
+    transition: width 0.5s ease 0.5s;
+}
+
+img:hover {
+    width: 270px;
+}
+
+input {
+    display: block;
+    font-size: 1.5rem;
+    padding: 5px;
+    transition: all 1s ease-out;
+}
+
+input:focus {
+    font-size: 2rem;
+    padding: 10px;
+}
+
+div.transform {
+    margin-top: 10px;
+    background: #FF0000;
+    width: 200px;
+    height: 200px;
+    transition: transform 1s linear;
+}
+
+div:hover{
+    transform: skewX(-20deg);
+}
+
+div.animation{
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+    background: red;
+    animation: switch 4s infinite;
+}
+
+@keyframes switch {
+    0%{
+        background: red;
+        border-radius: 0;
+    }
+    50%{
+        background: #008800;
+        border-radius: 50%;
+    }
+    100%{
+        background: red;
+        border-radius: 0;
+    }
+}
+
+p.ball{
+    margin-top: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: deepskyblue;
+    animation: bounce 3s infinite linear alternate;
+}
+
+@keyframes bounce {
+    0%{
+        transform: translate(0px, 0px);
+    }
+    100%{
+        transform: translate(400px, 0px);
+    }
+}
